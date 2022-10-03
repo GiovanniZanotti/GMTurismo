@@ -1,0 +1,31 @@
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    color: rgb(21, 223, 65);
+    font-family: "Arial";
+    font-size: 24px;
+}
+
+body{
+
+}
+
+nav{
+
+}
+
+li{
+    list-style-type: none;
+}
+
+ul{
+
+}
+
+.container-fluid{
+    width: fit-content !important;
+}

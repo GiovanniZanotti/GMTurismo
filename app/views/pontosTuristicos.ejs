@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pontos Turísticos</title>
+    <link rel="stylesheet" type="text/css" href="styles/pontosTuristicos.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		body {
+			font-family: Arial, Helvetica, sans-serif;
+		}
+
+		.inserir {
+            background-color: steelblue;
+			border-radius: 5px;
+			width: 50%;
+			margin: 2rem auto;
+			padding: 2rem 0;;
+			box-shadow: 10px 10px 5px black;
+		}
+
+		.inserir h1 {
+			text-align: center;
+			color:rgb(55, 51, 51);
+			margin: 1rem;
+		}
+
+		.form {
+			margin: 30px;
+			position: relative;
+			/* background-color: white; */
+		}
+
+		.form input{
+			width: 100%;
+			display: block;
+			font-size: 1.5rem;
+			border: none;
+			border-radius: 5px;
+			margin: 5px auto;
+			padding: 5px;
+		}
+
+		/* .form button::before {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			height: 40px;
+			width: 3px;
+			background-color: rgb(111, 107, 107);
+			border-radius: 5px;
+			transform: scaleY(0);
+			z-index: 0;
+			transition: transform .2s,
+						width 0.9s .2s; 
+		}
+
+		.form button:hover::before {
+			z-index: 1;
+			transform: scaleY(1);
+			width: 100%;
+		} */
+
+		.form button{
+			width: 100%;
+			height: 40px;
+			border: none;
+			border-radius: 10px;
+			background-color: #000;
+			color: white;
+			font-size: 1.5rem;
+			margin-top: 1rem;
+			position: relative;
+			z-index: 100;
+			transition: all .2s;
+		}	
+
+		.form button:hover {
+			transform: translateY(+5px);
+			background-color: rgb(111, 107, 107);
+			/* filter: brightness(2); */
+		}
+
+		section{
+			display: flex;
+			width: fit-content;
+			margin: 0 auto;
+		}
+
+		ul{
+			
+		}
+
+		li{
+			list-style-type: none;
+			margin: 10px;
+			color: rgb(55, 51, 51);
+			font-size: 18px;
+		}
+
+	</style>
+
+</head>
+<body>
+    
+
+    <header class="p-3 mb-3 border-bottom">
+        <div class="container">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+              <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
+            </a>
+    
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+              <li><a href="http://localhost:3000/" class="nav-link px-2 link-secondary">GM Turísmo</a></li>
+              <li><a href="http://localhost:3000/pontosTuristicos" class="nav-link px-2 link-dark">Pontos Turísticos</a></li>
+              <li><a href="http://localhost:3000/sobre" class="nav-link px-2 link-dark">Sobre Nós</a></li>
+              <li><a href="http://localhost:3000/contato" class="nav-link px-2 link-dark">Contato</a></li>
+            </ul>
+    
+          </div>
+        </div>
+      </header>
+
+    <h1>Pontos Turísticos</h1>
+
+
+    <div class="inserir">
+		<h1>Formulário para inclusão de pontos turísticos</h1>
+		<section>
+			<% if(errors) { %>
+				<ul>
+					<% for(let i = 0; i < errors.length; i++){ %>
+						<li>
+							<%= errors[i].msg %>
+						</li>
+					<% } %>
+				</ul>
+			<% } %>
+		</section>
+		<form class="form" action="/ponto/salvar" method="post">
+			<input type="text" name="nome" placeholder="Digite o nome do ponto turístico" value="<%= ponto.nome %>">
+			<input type="text" name="local" placeholder="Digite o local do ponto turístico" value="<%= ponto.artista %>">
+			<input type="text" name="descricao" placeholder="Digite a descrição do ponto turístico" value="<%= ponto.descricao %>" min="1" max="250">
+			<input type="text" name="urlimagem" placeholder="Digite a url da foto do ponto turístico" value="<%= ponto.urlimagem %>">
+			<button type="submit" value="enviar">Enviar</button>
+		</form>
+		
+	</div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <style>
+
+    *{
+    align-items: center;
+    align-items: center;
+    text-align: center;
+    }
+
+    #body{
+    background-color: rgb(209, 234, 255);
+    width: 70%;
+    margin: 0 auto;
+    color: #003e49;
+    border: solid 3px;
+    border-radius: 15px;
+    border-color: #25c8fa;
+}
+
+input{
+    border: solid 1px;
+    border-color: #0093b8;
+    border-radius: 5px;
+    background: #e2fdf8;
+}
+
+button{
+    color: #e2fdf8;
+    background-color: #6a5fff;
+    border-radius: 5px;
+    margin: 3px;
+}
+
+button:hover{
+    background-color: #0018a1;
+}
+
+p{
+    align-items: center;
+}
+#nome,#email{
+    width: 50%;
+}
+
+#comentario {
+    height: 150px;
+    width: 500px;
+}
+
+
+@media screen and (max-width:1200px) {
+    #comentario {
+        height: 130px;
+        width: 450px;
+    }
+}
+
+@media screen and (max-width:1040px) {
+    #comentario {
+        height: 120px;
+        width: 400px;
+    }
+}
+
+@media screen and (max-width:900px) {
+    #comentario {
+        width: 300px;
+    }
+    #body{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:450px) {
+    #comentario {
+        width: 250px;
+    }
+    #body{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:350px) {
+    #comentario {
+        width: 200px;
+    }
+    #body{
+        width: 90%;
+    }
+}
+
+footer{
+    position:static;
+    bottom: 1;
+    background-color: #2b384d;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    height: 80px;
+    line-height: 15px;
+    text-align: center;
+    
+}
+footer ul{
+    background-color: #51627f;
+}
+
+#myFooter{
+    padding-top:32px;
+}
+
+#myFooter .container{
+    text-align: center;
+}
+
+#myFooter .footer-copyright{
+    margin-bottom: 35px;
+    text-align: center;
+    color: #777;
+}
+
+#myFooter ul{
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 18px;
+}
+
+#myFooter a{
+    color: #282b2d;
+    font-size: 18px;
+}
+
+  </style>
+  </head>
+<body>
+  
+    <header class="p-3 mb-3 border-bottom">
+        <div class="container">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+              <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
+            </a>
+    
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+              <li><a href="http://localhost:3000/" class="nav-link px-2 link-secondary">GM Turísmo</a></li>
+              <li><a href="http://localhost:3000/pontosTuristicos" class="nav-link px-2 link-dark">Pontos Turísticos</a></li>
+              <li><a href="http://localhost:3000/sobre" class="nav-link px-2 link-dark">Sobre Nós</a></li>
+              <li><a href="http://localhost:3000/contato" class="nav-link px-2 link-dark">Contato</a></li>
+            </ul>
+          </div>
+        </div>
+      </header> 
+
+    <section className="corpo">
+      <h1><strong>Fale Conosco</strong></h1>
+      <h3>Participe da nossa plataforma. Seu comentário é importante para nós!</h3>
+        <br>
+      <div id="body">
+
+          <h4>Nome:</h4>
+          <div>
+              <input type="text" id="nome" placeholder="Digite seu nome Completo" />
+          </div>
+          <h4>Email:</h4>
+          <div>
+              <input type="text" id="email" placeholder="Digite seu email" />
+          </div>
+          <h4>Comentário:</h4>
+          <div>
+              <input type="text" id="comentario" placeholder="Digite seu comentário" />
+          </div>
+          <div>
+            <button type="submit" value="enviar">Enviar</button>
+          </div>
+      </div>
+  </section >
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+</body>
+</html>

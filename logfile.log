@@ -1,0 +1,37 @@
+{"level":"error","message":"ER_ACCESS_DENIED_ERROR: Access denied for user 'roo'@'localhost' (using password: YES)"}
+{"level":"error","message":"ER_ACCESS_DENIED_ERROR: Access denied for user 'roo'@'localhost' (using password: YES)"}
+{"level":"error","message":"ER_ACCESS_DENIED_ERROR: Access denied for user 'roo'@'localhost' (using password: YES)"}
+{"level":"error","message":"ER_ACCESS_DENIED_ERROR: Access denied for user 'roo'@'localhost' (using password: YES)"}
+{"level":"error","message":{"code":"ER_ACCESS_DENIED_ERROR","errno":1045,"fatal":true,"sqlMessage":"Access denied for user 'roo'@'localhost' (using password: YES)","sqlState":"28000"}}
+{"level":"error","message":"id inválido"}
+{"level":"error","message":"id inválido"}
+{"level":"error","message":{"code":"ER_ACCESS_DENIED_ERROR","errno":1045,"fatal":true,"sqlMessage":"Access denied for user 'roo'@'localhost' (using password: YES)","sqlState":"28000"}}
+{"level":"error","message":"Erro na conexão com o banco de dados."}
+{"level":"error","message":"Erro na conexão com o banco de dados."}
+{"level":"error","message":"Erro na conexão com o banco de dados."}
+{"level":"error","message":"ER_ACCESS_DENIED_ERROR: Access denied for user 'roo'@'localhost' (using password: YES)"}
+{"level":"error","message":"id inválido"}
+{"level":"error","message":"ER_ACCESS_DENIED_ERROR: Access denied for user 'roo'@'localhost' (using password: YES)"}
+{"level":"error","message":"connect ECONNREFUSED 127.0.0.1:3306"}
+{"level":"error","message":"ER_ACCESS_DENIED_ERROR: Access denied for user 'root'@'localhost' (using password: YES)"}
+{"level":"error","message":"getaddrinfo ENOTFOUND localhost:3306"}
+{"level":"error","message":"getaddrinfo ENOTFOUND localhost:3306"}
+{"level":"error","message":"getaddrinfo ENOTFOUND localhost:3306"}
+{"level":"error","message":"getaddrinfo ENOTFOUND localhost:3306"}
+{"level":"error","message":"getaddrinfo ENOTFOUND localhost:3306"}
+{"level":"error","message":"getaddrinfo ENOTFOUND localhost:3306"}
+{"level":"error","message":"getaddrinfo ENOTFOUND localhost:3306"}
+{"level":"error","message":"getaddrinfo ENOTFOUND localhost:3306"}
+{"level":"error","message":"getaddrinfo ENOTFOUND localhost:3306"}
+{"level":"error","message":"ER_BAD_DB_ERROR: Unknown database 'museu'"}
+{"level":"error","message":"ER_BAD_DB_ERROR: Unknown database 'museu'"}
+{"level":"error","message":"ER_BAD_DB_ERROR: Unknown database 'museu'"}
+{"level":"error","message":"ER_BAD_DB_ERROR: Unknown database 'museu'"}
+{"level":"error","message":"ER_BAD_DB_ERROR: Unknown database 'museu'"}
+{"level":"error","message":"ER_BAD_DB_ERROR: Unknown database 'museu'"}
+{"level":"error","message":"ER_BAD_DB_ERROR: Unknown database 'museu'"}
+{"level":"error","message":"id inválido"}
+{"level":"error","message":"ER_ACCESS_DENIED_ERROR: Access denied for user 'root'@'localhost' (using password: YES)"}
+{"level":"error","message":"ER_ACCESS_DENIED_ERROR: Access denied for user 'root'@'localhost' (using password: YES)"}
+{"level":"error","message":"ER_ACCESS_DENIED_ERROR: Access denied for user 'root'@'localhost' (using password: YES)"}
+{"level":"error","message":"id inválido"}
